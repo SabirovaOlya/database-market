@@ -1,0 +1,72 @@
+/*Categories*/
+create table categories(
+    id serial primary key,
+    name varchar(60)
+);
+
+/*Customers*/
+create table customers(
+    id serial primary key,
+    full_name varchar(255),
+    email varchar(127) UNIQUE,
+    address text,
+    phone varchar(30) UNIQUE,
+    registration_date date
+);
+
+/*Suppliers*/
+create table suppliers(
+    id serial primary key,
+    name varchar(60),
+    contact_name varchar(60),
+    address text,
+    phone varchar(30) UNIQUE,
+    email varchar(127) UNIQUE
+);
+
+/*Products*/
+create table products(
+    id serial primary key,
+    name varchar(127),
+    description text,
+    price decimal,
+    stock_quantity int check (stock_quantity > 0),
+    category_id int,
+    supplier_id int,
+    constraint product_category_id foreign key(category_id) references categories(id) on delete set null,
+    constraint product_supplier_id foreign key(supplier_id) references suppliers(id) on delete set null
+);
+
+/*Orders*/
+create table orders(
+    id serial primary key,
+    customer_id int,
+    order_date date,
+    total_amount decimal check (total_amount > 0),
+    shipping_address text,
+    status varchar(50),
+    constraint order_customer_id foreign key(customer_id) references customers(id) on delete set null
+);
+
+/*Order Details*/
+create table order_details(
+    id serial primary key,
+    order_id int,
+    product_id int,
+    quantity int check (quantity > 0),
+    price_per_item decimal check (price_per_item > 0),
+    constraint orderdetails_order_id foreign key(order_id) references orders(id) on delete set null,
+    constraint orderdetails_product_id foreign key(product_id) references products(id) on delete set null
+);
+
+/*Customer Reviews*/
+create table customer_reviews(
+    id serial primary key,
+    product_id int,
+    customer_id int,
+    rating decimal check ( rating > 0 and rating <= 10),
+    review_text text,
+    review_date date,
+    constraint customerreviews_product_id foreign key(product_id) references products(id) on delete set null,
+    constraint customerreviews_customer_id foreign key(customer_id) references customers(id) on delete set null
+);
