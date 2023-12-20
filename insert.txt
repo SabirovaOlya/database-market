@@ -230,16 +230,16 @@ VALUES
     (18, 18, 7.9, 'Fairly satisfied. Room for improvement.', '2023-12-19'),
     (19, 19, 8.4, 'Impressed with the features.', '2023-12-20'),
     (20, 20, 6.9, 'Could use some improvements.', '2023-12-11'),
-    (21, 21, 9.2, 'Highly recommended. Excellent service.', '2023-12-12'),
-    (22, 22, 8.7, 'Good experience overall.', '2023-12-13'),
-    (23, 23, 7.6, 'Average product, nothing special.', '2023-12-14'),
-    (24, 24, 9.4, 'Very satisfied. Great value for money.', '2023-12-15'),
-    (25, 25, 7.3, 'Mixed feelings. Some pros and cons.', '2023-12-16'),
-    (26, 26, 8.9, 'Excellent purchase. No regrets.', '2023-12-17'),
-    (27, 27, 6.7, 'Below expectations. Not recommended.', '2023-12-18'),
-    (28, 28, 8.3, 'Satisfied with the quality.', '2023-12-19'),
-    (29, 29, 9.7, 'Outstanding product and service.', '2023-12-20'),
-    (30, 30, 7.8, 'Could be improved. Average experience.', '2023-12-03');
+    (21, 11, 9.2, 'Highly recommended. Excellent service.', '2023-12-12'),
+    (22, 12, 8.7, 'Good experience overall.', '2023-12-13'),
+    (23, 13, 7.6, 'Average product, nothing special.', '2023-12-14'),
+    (24, 14, 9.4, 'Very satisfied. Great value for money.', '2023-12-15'),
+    (25, 15, 7.3, 'Mixed feelings. Some pros and cons.', '2023-12-16'),
+    (26, 16, 8.9, 'Excellent purchase. No regrets.', '2023-12-17'),
+    (27, 17, 6.7, 'Below expectations. Not recommended.', '2023-12-18'),
+    (28, 18, 8.3, 'Satisfied with the quality.', '2023-12-19'),
+    (29, 19, 9.7, 'Outstanding product and service.', '2023-12-20'),
+    (30, 20, 7.8, 'Could be improved. Average experience.', '2023-12-03');
 
 
 
