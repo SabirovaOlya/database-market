@@ -35,7 +35,7 @@ INSERT INTO customers (full_name, email, address, phone, registration_date) VALU
 ('Hannah Taylor', 'hannah.taylor@example.com', '707 Maple St, Outskirts', '+998877155', '2020-01-10'),
 ('George Evans', 'george.evans@example.com', '808 Cedar St, Seaside', '+1100334455', '2020-01-11'),
 ('Isabel Rodriguez', 'isabel.rodriguez@example.com', '909 Birch St, Mountainside', '+5544334511', '2020-01-12'),
-('Jack Harris', 'jack.harris@example.com', '1212 Elm St, Lakeside', '+6677889910, '2020-01-13'),
+('Jack Harris', 'jack.harris@example.com', '1212 Elm St, Lakeside', '+6677889910', '2020-01-13'),
 ('Kelly Brown', 'kelly.brown@example.com', '1313 Pine St, Hillside', '+998877685', '2020-01-14'),
 ('Leo Garcia', 'leo.garcia@example.com', '1414 Oak St, Countryside', '+1122224455', '2020-01-15'),
 ('Mia Robinson', 'mia.robinson@example.com', '1515 Maple St, Suburbia', '+5544332441', '2020-01-16'),
@@ -58,7 +58,7 @@ INSERT INTO suppliers (name, contact_name, address, phone, email) VALUES
 ('Future Gadgets', 'Frank White', '606 Oak St, Downtown', '+663889900', 'frank.white@futuregadgets.com'),
 ('Smart Devices Inc.', 'Hannah Taylor', '707 Maple St, Outskirts', '+998877645', 'hannah.taylor@smartdevices.com'),
 ('Tech Hub Ltd.', 'George Evans', '808 Cedar St, Seaside', '+1122334475', 'george.evans@techhub.com'),
-('Global Innovations', 'Isabel Rodriguez', '909 Birch St, Mountainside', '+554433989 'isabel.rodriguez@global.com'),
+('Global Innovations', 'Isabel Rodriguez', '909 Birch St, Mountainside', '+554433989', 'isabel.rodriguez@global.com'),
 ('Creative Electronics', 'Jack Harris', '1212 Elm St, Lakeside', '+664889900', 'jack.harris@creative.com'),
 ('Inventive Solutions', 'Kelly Brown', '1313 Pine St, Hillside', '+998877555', 'kelly.brown@inventive.com'),
 ('NextGen Tech', 'Leo Garcia', '1414 Oak St, Countryside', '+1022334455', 'leo.garcia@nextgen.com'),
@@ -66,7 +66,7 @@ INSERT INTO suppliers (name, contact_name, address, phone, email) VALUES
 ('Supply Source', 'Noah Clark', '1616 Cedar St, Villagetown', '+665889900', 'noah.clark@supplysource.com'),
 ('Advanced Electronics', 'Olivia Turner', '1717 Birch St, Hamletville', '+998076655', 'olivia.turner@advanced.com'),
 ('Power Tech Ltd.', 'Paula Lewis', '1818 Elm St, Cityville', '+1122334400', 'paula.lewis@powertech.com'),
-('Innovate IT Solutions', 'Quentin Hall', '1919 Pine St, Townsville', '+554433987 'quentin.hall@innovateit.com');
+('Innovate IT Solutions', 'Quentin Hall', '1919 Pine St, Townsville', '+554433987', 'quentin.hall@innovateit.com');
 
 
 
@@ -117,93 +117,93 @@ INSERT INTO orders (customer_id, order_date, total_amount, shipping_address, sta
 VALUES
     (1, '2022-01-15', 1799.97, '123 Main St, Cityville', 'Shipped'),
     (2, '2022-02-20', 159.98, '456 Oak St, Townsville', 'Processing'),
-    (3, '2022-03-10', 174.95, '789 Pine St, Villageland', 'Delivered'),
-    (4, '2022-04-05', 5999.96, '101 Maple St, Boroughburg', 'Shipped'),
-    (5, '2022-05-12', 24.99, '202 Elm St, Hamletville', 'Processing'),
-    (6, '2022-06-18', 314.93, '303 Cedar St, Settlement City', 'Delivered'), 
-    (7, '2022-07-22', 449.91, '404 Birch St, Township', 'Shipped'),
-    (8, '2022-08-30', 159.96, '505 Spruce St, Districtburg', 'Processing'),
-    (9, '2022-09-14', 299.90, '606 Fir St, Sectorville', 'Delivered'),
-    (10, '2022-10-02', 539.88, '707 Pine St, Zoneburg', 'Shipped'),   
-    (11, '2022-11-08', 249.97, '808 Oak St, Countyville', 'Processing'),
-    (12, '2022-12-15', 839.88, '909 Cedar St, Territory', 'Delivered'),  
-    (13, '2022-01-02', 149.99, '1011 Elm St, Precinct City', 'Shipped'),
-    (14, '2023-02-17', 759.87, '1212 Maple St, Municipality', 'Processing'), 
-    (15, '2022-03-20', 389.98, '1313 Birch St, Domainburg', 'Delivered'),
-    (16, '2023-04-25', 149.94, '1414 Spruce St, Fieldville', 'Shipped'), 
-    (17, '2023-05-28', 899.90, '1515 Fir St, Zone', 'Processing'),
-    (18, '2023-06-10', 329.97, '1616 Pine St, District', 'Delivered'),
-    (19, '2023-07-15', 599.94, '1717 Oak St, Sector', 'Shipped'),
-    (20, '2023-08-22', 134.97, '1818 Cedar St, Precinct', 'Processing'), 
-    (1, '2023-09-01', 1799.97, '1920 Main St, Cityville', 'Processing'),
-    (2, '2023-10-10', 899.97, '2122 Oak St, Townsville', 'Delivered'),
-    (3, '2023-11-15', 174.95, '2324 Pine St, Villageland', 'Shipped'),
-    (4, '2023-12-01', 519.96, '2526 Maple St, Boroughburg', 'Processing'),
-    (5, '2021-01-25', 44.99, '2728 Elm St, Hamletville', 'Delivered'),  
-    (6, '2021-02-28', 679.92, '2930 Cedar St, Settlement City', 'Shipped'),
-    (7, '2021-03-05', 159.96, '3132 Birch St, Township', 'Processing'),
-    (8, '2021-04-12', 419.94, '3334 Spruce St, Districtburg', 'Delivered'),
-    (9, '2021-05-20', 299.90, '3536 Fir St, Sectorville', 'Shipped'),
-    (10, '2021-06-30', 749.93, '3738 Pine St, Zoneburg', 'Processing'),
-    (11, '2021-07-10', 449.91, '3940 Oak St, Countyville', 'Delivered'),
-    (12, '2021-08-15', 199.99, '4142 Cedar St, Territory', 'Shipped'),
-    (13, '2021-09-22', 569.95, '4344 Elm St, Precinct City', 'Processing'),
-    (14, '2021-10-28', 129.98, '4546 Maple St, Municipality', 'Delivered'),
-    (15, '2021-11-30', 389.98, '4748 Birch St, Domainburg', 'Shipped'),
-    (16, '2021-12-05', 899.90, '4950 Spruce St, Fieldville', 'Processing'),
-    (17, '2021-01-10', 329.97, '5152 Fir St, Zone', 'Delivered'),
-    (18, '2021-02-15', 199.96, '5354 Pine St, District', 'Shipped'),
-    (19, '2021-03-20', 599.94, '5556 Oak St, Sector', 'Processing'),
-    (20, '2023-04-25', 134.97, '5758 Cedar St, Precinct', 'Delivered');
+    (3, '2022-03-10', 6499.95, '789 Pine St, Villageland', 'Delivered'),
+    (4, '2022-04-05', 1199.96, '101 Maple St, Boroughburg', 'Shipped'),
+    (5, '2022-05-12', 49.99, '202 Elm St, Hamletville', 'Processing'),
+    (6, '2022-06-18', 1049.93, '303 Cedar St, Settlement City', 'Delivered'), 
+    (7, '2022-07-22', 599.97, '404 Birch St, Township', 'Shipped'),
+    (8, '2022-08-30', 69.98, '505 Spruce St, Districtburg', 'Processing'),
+    (9, '2022-09-14', 999.96, '606 Fir St, Sectorville', 'Delivered'),
+    (10, '2022-10-02', 269.97, '707 Pine St, Zoneburg', 'Shipped'),   
+    (11, '2022-11-08', 49.98, '808 Oak St, Countyville', 'Processing'),
+    (12, '2022-12-15', 1499.99, '909 Cedar St, Territory', 'Delivered'),  
+    (13, '2022-01-02', 329.97, '1011 Elm St, Precinct City', 'Shipped'),
+    (14, '2023-02-17', 899.80, '1212 Maple St, Municipality', 'Processing'), 
+    (15, '2022-03-20', 279.96, '1313 Birch St, Domainburg', 'Delivered'),
+    (16, '2023-04-25', 259.98, '1414 Spruce St, Fieldville', 'Shipped'), 
+    (17, '2023-05-28', 1799.90, '1515 Fir St, Zone', 'Processing'),
+    (18, '2023-06-10', 599.97, '1616 Pine St, District', 'Delivered'),
+    (19, '2023-07-15', 109.98, '1717 Oak St, Sector', 'Shipped'),
+    (20, '2023-08-22', 239.97, '1818 Cedar St, Precinct', 'Processing'), 
+    (1, '2023-09-01', 449.95, '1920 Main St, Cityville', 'Processing'),
+    (2, '2023-10-10', 499.98, '2122 Oak St, Townsville', 'Delivered'),
+    (3, '2023-11-15', 1199.96, '2324 Pine St, Villageland', 'Shipped'),
+    (4, '2023-12-01', 59.97, '2526 Maple St, Boroughburg', 'Processing'),
+    (5, '2021-01-25', 79.99, '2728 Elm St, Hamletville', 'Delivered'),  
+    (6, '2021-02-28', 2099.94, '2930 Cedar St, Settlement City', 'Shipped'),
+    (7, '2021-03-05', 134.97, '3132 Birch St, Township', 'Processing'),
+    (8, '2021-04-12', 259.98, '3334 Spruce St, Districtburg', 'Delivered'),
+    (9, '2021-05-20', 54.99, '3536 Fir St, Sectorville', 'Shipped'),
+    (10, '2021-06-30', 159.96, '3738 Pine St, Zoneburg', 'Processing'),
+    (11, '2021-07-10', 1559.88, '3940 Oak St, Countyville', 'Delivered'),
+    (12, '2021-08-15', 539.97, '4142 Cedar St, Territory', 'Shipped'),
+    (13, '2021-09-22', 139.98, '4344 Elm St, Precinct City', 'Processing'),
+    (14, '2021-10-28', 119.99, '4546 Maple St, Municipality', 'Delivered'),
+    (15, '2021-11-30', 359.96, '4748 Birch St, Domainburg', 'Shipped'),
+    (16, '2021-12-05', 399.98, '4950 Spruce St, Fieldville', 'Processing'),
+    (17, '2021-01-10', 179.97, '5152 Fir St, Zone', 'Delivered'),
+    (18, '2021-02-15', 99.98, '5354 Pine St, District', 'Shipped'),
+    (19, '2021-03-20', 29.99, '5556 Oak St, Sector', 'Processing'),
+    (20, '2023-04-25', 89.97, '5758 Cedar St, Precinct', 'Delivered');
 
 
 
 
 INSERT INTO order_details (order_id, product_id, quantity)
 VALUES
-    (1, 1, 3),    -- Product 1 (Smartphone X) - $599.99 * 3 = $1799.97
-    (2, 5, 2),    -- Product 5 (Outdoor Camping Tent) - $79.99 * 2 = $159.98
-    (3, 10, 5),   -- Product 10 (Gourmet Chocolate Assortment) - $34.99 * 5 = $174.95
-    (4, 15, 4),   -- Product 15 (Abstract Art Canvas) - $129.99 * 4 = $519.96
-    (5, 20, 1),   -- Product 20 (Luxury Pen Set) - $44.99 * 1 = $44.99
-    (6, 25, 7),   -- Product 25 (Product ID 25) - Assuming price * quantity = $ value
-    (7, 30, 3),   -- Product 30 (Product ID 30) - Assuming price * quantity = $ value
-    (8, 35, 2),   -- Product 35 (Product ID 35) - Assuming price * quantity = $ value
-    (9, 40, 4),   -- Product 40 (Product ID 40) - Assuming price * quantity = $ value
-    (10, 45, 3),  -- Product 45 (Product ID 45) - Assuming price * quantity = $ value
-    (11, 50, 2),  -- Product 50 (Product ID 50) - Assuming price * quantity = $ value
-    (12, 55, 1),  -- Product 55 (Product ID 55) - Assuming price * quantity = $ value
-    (13, 60, 3),  -- Product 60 (Product ID 60) - Assuming price * quantity = $ value
-    (14, 65, 2),  -- Product 65 (Product ID 65) - Assuming price * quantity = $ value
-    (15, 70, 4),  -- Product 70 (Product ID 70) - Assuming price * quantity = $ value
-    (16, 75, 2),  -- Product 75 (Product ID 75) - Assuming price * quantity = $ value
-    (17, 80, 1),  -- Product 80 (Product ID 80) - Assuming price * quantity = $ value
-    (18, 85, 3),  -- Product 85 (Product ID 85) - Assuming price * quantity = $ value
-    (19, 90, 2),  -- Product 90 (Product ID 90) - Assuming price * quantity = $ value
-    (20, 95, 3);  -- Product 95 (Product ID 95) - Assuming price * quantity = $ value
+    (1, 1, 3),    
+    (2, 5, 2),    
+    (3, 2, 5),   
+    (4, 3, 4),   
+    (5, 6, 1),   
+    (6, 4, 7),   
+    (7, 7, 3),   
+    (8, 10, 2),   
+    (9, 9, 4),   
+    (10, 8, 3),  
+    (11, 20, 2),  
+    (12, 15, 1),  
+    (13, 17, 3),  
+    (14, 19, 20),  
+    (15, 18, 4),  
+    (16, 16, 2),  
+    (17, 12, 10),  
+    (18, 11, 3),  
+    (19, 13, 2),  
+    (20, 14, 3);  
 
 INSERT INTO order_details (order_id, product_id, quantity)
 VALUES
-    (21, 100, 5),   -- Product 100 (Product ID 100) - Assuming price * quantity = $ value
-    (22, 105, 2),   -- Product 105 (Product ID 105) - Assuming price * quantity = $ value
-    (23, 110, 4),   -- Product 110 (Product ID 110) - Assuming price * quantity = $ value
-    (24, 115, 3),   -- Product 115 (Product ID 115) - Assuming price * quantity = $ value
-    (25, 120, 1),   -- Product 120 (Product ID 120) - Assuming price * quantity = $ value
-    (26, 125, 6),   -- Product 125 (Product ID 125) - Assuming price * quantity = $ value
-    (27, 130, 3),   -- Product 130 (Product ID 130) - Assuming price * quantity = $ value
-    (28, 135, 2),   -- Product 135 (Product ID 135) - Assuming price * quantity = $ value
-    (29, 140, 1),   -- Product 140 (Product ID 140) - Assuming price * quantity = $ value
-    (30, 145, 4),   -- Product 145 (Product ID 145) - Assuming price * quantity = $ value
-    (31, 150, 2),   -- Product 150 (Product ID 150) - Assuming price * quantity = $ value
-    (32, 155, 3),   -- Product 155 (Product ID 155) - Assuming price * quantity = $ value
-    (33, 160, 2),   -- Product 160 (Product ID 160) - Assuming price * quantity = $ value
-    (34, 165, 1),   -- Product 165 (Product ID 165) - Assuming price * quantity = $ value
-    (35, 170, 4),   -- Product 170 (Product ID 170) - Assuming price * quantity = $ value
-    (36, 175, 2),   -- Product 175 (Product ID 175) - Assuming price * quantity = $ value
-    (37, 180, 3),   -- Product 180 (Product ID 180) - Assuming price * quantity = $ value
-    (38, 185, 2),   -- Product 185 (Product ID 185) - Assuming price * quantity = $ value
-    (39, 190, 1),   -- Product 190 (Product ID 190) - Assuming price * quantity = $ value
-    (40, 195, 3);   -- Product 195 (Product ID 195) - Assuming price * quantity = $ value
+    (21, 30, 5),   
+    (22, 22, 2),   
+    (23, 26, 4),   
+    (24, 28, 3),   
+    (25, 21, 1),   
+    (26, 23, 6),   
+    (27, 25, 3),   
+    (28, 24, 2),   
+    (29, 27, 1),   
+    (30, 29, 4),   
+    (31, 40, 12),   
+    (32, 33, 3),   
+    (33, 35, 2),   
+    (34, 31, 1),   
+    (35, 37, 4),   
+    (36, 32, 2),   
+    (37, 39, 3),   
+    (38, 36, 2),   
+    (39, 38, 1),   
+    (40, 34, 3);  
 
 
 
